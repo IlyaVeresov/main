@@ -1,0 +1,21 @@
+inp=('g g g g g g g g g abc abc abc a a a a b b b b B B B ABC ABC abC AbC ABc aBC')
+inp_low=inp.lower()
+w=inp_low.split(' ')
+d={}
+s=[]
+for i in range (0,len(w)):
+    d[w[i]]=w.count(w[i])
+for i in d.values(): 
+    s.append (i)
+
+#print (d)
+
+max1=max(s)
+#print (max1)
+z=[]
+for i in range (0,len(w)):
+    if (w.count(w[i]))==max1 and w[i] not in z: 
+        z.append(w[i])
+print (sorted(z)[0], max1)
+print (z[0], max1)
+    
