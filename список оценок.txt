@@ -1,0 +1,15 @@
+a=('Nevill;85;92;78')
+b=('Philips;52;50;94')
+c=('Shackley;27;52;56')
+d=('White;92;28;82')
+e=('WifKinson;29;24;26')
+fiz=0
+math=0
+rus=0
+for i in range (5):
+    s=(a.split(';'))
+    print (s[0],((int(s[1])+int(s[2])+int(s[3]))/3))
+    fiz+=int(s[1])
+    math+=int(s[2])
+    rus=+int(s[2])
+    print (fiz,math,rus)
