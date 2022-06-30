@@ -1,0 +1,21 @@
+inp=['8	Brooks	164','3	Thornton	132','1	Mathews	126','3	Sherlock	136','8	Dodson	170']
+null='0' 
+s=[]
+d={}
+for i in range (1,12):
+    d[i]=[]
+
+for i in (inp):
+    s.append (i.split())
+print (s)
+
+for i in range (len(s)):
+        d[int(s[i][0])]+=[int(s[i][2])]
+    
+print (d)
+
+for i in d.keys():
+    if sum(d[i])==0:
+        print (i,'-')
+    else: 
+        print (i,sum(d[i]))
